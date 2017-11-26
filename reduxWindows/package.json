@@ -4,16 +4,23 @@
 	"private": true,
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
+		"clean": "watchman watch-del-all",
+		"reset": "react-native start --reset-cache",
+		"test": "jest",
+		"android": "react-native run-android"
 	},
 	"dependencies": {
 		"react": "16.0.0",
-		"react-native": "0.50.3"
+		"react-native": "0.50.3",
+		"react-native-material-ripple": "^0.7.5",
+		"watchman": "^0.1.8"
 	},
 	"devDependencies": {
 		"babel-jest": "21.2.0",
 		"babel-preset-react-native": "4.0.0",
 		"jest": "21.2.1",
+		"react-native-elements": "^0.18.2",
+		"react-native-vector-icons": "^4.4.2",
 		"react-test-renderer": "16.0.0"
 	},
 	"jest": {
